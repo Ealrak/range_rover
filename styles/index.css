@@ -1,0 +1,177 @@
+header {
+    padding:0 120px;
+    height:70px;
+    position:relative;
+}
+header h1 {
+    width:204px;
+}
+header h1 a {}
+header h1 a img {}
+header nav {
+    position:absolute;
+    top:26.5px; right:120px;
+    float:right;
+}
+header nav a {
+    font-size:0.875rem;
+    margin-left:30px;
+}
+main {
+    position:relative;
+}
+main .main_wrap {
+    width:1920px;
+    height:900px;
+    background:url(/images/main_image.png)
+}
+main .brands {
+    position:absolute;
+    left:700px;
+}
+main .brands a {}
+main .brands a img {}
+main .electric {
+    padding-top:100px;
+    width:1609.53px; height:1042px;
+    background-color:blue;
+    margin:0 auto;
+    text-align:center;
+}
+main .electric > h1 {
+    background-color:lime;
+    font-size:2.25rem;
+    font-weight:600;
+    padding-bottom:20px;
+}
+main .electric > h2 {
+    padding-bottom:50px;
+}
+main .electric .electric_wrap {}
+main .electric .electric_wrap .shorts_ad {
+    float:left;
+    margin-right:15px;
+}
+main .electric .electric_wrap .shorts_ad video {
+    width:453.33px; height:810px;
+}
+main .electric .electric_wrap .home_charge {
+    float:left;
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .home_charge > * {
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .home_charge h1 {}
+main .electric .electric_wrap .home_charge h1 img {}
+main .electric .electric_wrap .home_charge h2 {
+    font-weight:600;
+}
+main .electric .electric_wrap .home_charge span {}
+main .electric .electric_wrap .weather_charge {
+    float:left;
+    margin-left:15px;
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .weather_charge > * {
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .weather_charge h1 {}
+main .electric .electric_wrap .weather_charge h1 img {}
+main .electric .electric_wrap .weather_charge h2 {
+    font-weight:600;
+}
+main .electric .electric_wrap .weather_charge span {}
+main .electric .electric_wrap .out_charge {
+    float:left;
+}
+main .electric .electric_wrap .out_charge > * {
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .out_charge h1 {}
+main .electric .electric_wrap .out_charge h1 img {}
+main .electric .electric_wrap .out_charge h2 {
+    font-weight:600;
+}
+main .electric .electric_wrap .out_charge span {}
+main .electric .electric_wrap .charge_chk {
+    float:left;
+    margin-left:15px;
+}
+main .electric .electric_wrap .charge_chk > * {
+    margin-bottom:15px;
+}
+main .electric .electric_wrap .charge_chk h1 {}
+main .electric .electric_wrap .charge_chk h1 img {}
+main .electric .electric_wrap .charge_chk h2 {
+    font-weight:600;
+}
+main .electric .electric_wrap .charge_chk span {}
+main .model_all {
+    width:1680px; height:1161px;
+    background-color:pink;
+    margin:100px auto;
+}
+main .model_all h1  {
+    margin-top:50px;
+    padding-bottom:30px;
+    font-size:1.5rem;
+    font-weight:600;
+}
+main .model_all .category {
+    margin-bottom:30px;
+}
+main .model_all .category span {
+    margin-right:30px;
+}
+main .model_all .category span img {}
+main .model_all .model_wrap {
+    background-color:aqua
+}
+main .model_all .model_wrap .model {
+    background-color:brown;
+    width:540px; height:446px;
+}
+main .model_all .model_wrap .model .car_intro {
+    line-height:180%;
+    background-color:yellow;
+}
+main .model_all .model_wrap .model .car_intro img {
+    width:540px; height:304px;
+}
+main .model_all .model_wrap .model .car_intro .cp {
+    font-size:0.75rem;
+}
+main .model_all .model_wrap .model .car_intro .product {
+    font-weight:600;
+}
+main .model_all .model_wrap .model .car_intro > em {
+    font-size:0.875rem;
+}
+main .model_all .model_wrap .model .btm_btn {
+    width:540px; height:36px;
+    background-color:blue;
+    line-height:36px;
+}
+main .model_all .model_wrap .model .btm_btn .make {}
+main .model_all .model_wrap .model .btm_btn .detail {}
+main .model_all .model_wrap .model .btm_btn .detail img {}
+main .model_all .model_wrap .model1 {}
+main .model_all .model_wrap .model2 {}
+main .model_all .model_wrap .model3 {}
+main .model_all .model_wrap .model4 {}
+main .model_all .model_wrap .model5 {}
+main .model_all .model_wrap .model6 {}
+main .one_care {}
+main .one_care h1 {}
+main .one_care span {}
+main .one_care em {}
+main .one_care #oc_care {}
+main .one_care img {}
+main .search {}
+main .search .showroom {}
+main .search .old_car {}
+main .search .test_drive {}
+footer {}
+footer span {}
+footer img {}

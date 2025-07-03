@@ -17,32 +17,45 @@ header nav a {
     font-size:0.875rem;
     margin-left:30px;
 }
-main {
-    position:relative;
-}
+main {}
 main .main_wrap {
     width:1920px;
     height:900px;
     background:url(/images/main_image.png)
 }
 main .brands {
-    position:absolute;
-    left:700px;
+    display:flex;
+    position:absolute; bottom:-55px; left:700px;
 }
-main .brands a {}
-main .brands a img {}
+main .brands > * img {background-color:#fff;}
+main .brands > * img:hover {
+    background-color:#000;
+    filter:invert(1);
+}
+main .brands #range_rover {}
+main .brands #range_rover a {}
+main .brands #range_rover a img {}
+main .brands #defender {
+    width:180px;
+}
+main .brands #defender a {}
+main .brands #defender a img {}
+main .brands #discovery {
+    height:39px;
+    border:1px solid rgba(0,0,0,0.4);
+}
+main .brands #discovery a {}
+main .brands #discovery a img {}
 main .electric {
     padding-top:100px;
     width:1609.53px; height:1042px;
-    background-color:blue;
     margin:0 auto;
     text-align:center;
 }
 main .electric > h1 {
-    background-color:lime;
     font-size:2.25rem;
     font-weight:600;
-    padding-bottom:20px;
+    margin-bottom:20px;
 }
 main .electric > h2 {
     padding-bottom:50px;
@@ -109,7 +122,6 @@ main .electric .electric_wrap .charge_chk h2 {
 main .electric .electric_wrap .charge_chk span {}
 main .model_all {
     width:1680px; height:1161px;
-    background-color:pink;
     margin:100px auto;
 }
 main .model_all h1  {
@@ -121,20 +133,26 @@ main .model_all h1  {
 main .model_all .category {
     margin-bottom:30px;
 }
-main .model_all .category span {
+main .model_all .category a {
     margin-right:30px;
 }
-main .model_all .category span img {}
+main .model_all .category a img {}
 main .model_all .model_wrap {
-    background-color:aqua
+}
+main .model_all .model_wrap {
+    display:flex;
+    flex-flow:row wrap;
 }
 main .model_all .model_wrap .model {
-    background-color:brown;
     width:540px; height:446px;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+main .model_all .model_wrap .model:nth-child(3n) {
+    margin-right:0;
 }
 main .model_all .model_wrap .model .car_intro {
     line-height:180%;
-    background-color:yellow;
 }
 main .model_all .model_wrap .model .car_intro img {
     width:540px; height:304px;
@@ -150,28 +168,87 @@ main .model_all .model_wrap .model .car_intro > em {
 }
 main .model_all .model_wrap .model .btm_btn {
     width:540px; height:36px;
-    background-color:blue;
     line-height:36px;
+    position:relative;
 }
-main .model_all .model_wrap .model .btm_btn .make {}
-main .model_all .model_wrap .model .btm_btn .detail {}
-main .model_all .model_wrap .model .btm_btn .detail img {}
+main .model_all .model_wrap .model .btm_btn .make {
+}
+main .model_all .model_wrap .model .btm_btn .detail {
+    position:absolute; top:8px; right:0;
+}
+main .model_all .model_wrap .model .btm_btn .detail img {
+    position:absolute; right:80px;
+}
 main .model_all .model_wrap .model1 {}
 main .model_all .model_wrap .model2 {}
 main .model_all .model_wrap .model3 {}
 main .model_all .model_wrap .model4 {}
 main .model_all .model_wrap .model5 {}
 main .model_all .model_wrap .model6 {}
-main .one_care {}
-main .one_care h1 {}
-main .one_care span {}
-main .one_care em {}
-main .one_care #oc_care {}
+main .one_care {
+    width:100%; height:600px;
+    background-color:#333;
+    display:flex;
+    flex-flow:row nowrap;
+}
+main .one_care .oc_txt {
+    margin:158.5px 0;
+    text-align:center;
+    width:960px; height:283px;
+}
+main .one_care .oc_txt > * {
+    color:#fff;
+}
+main .one_care .oc_txt h1 {
+    font-size:2rem;
+    font-weight:600;
+    margin-bottom:50px;
+}
+main .one_care .oc_txt span {
+    line-height:140%;
+}
+main .one_care .oc_txt .oc_src {
+    margin-top:30px;
+}
+main .one_care .oc_txt .oc_src em {
+    font-weight:500;
+    color:#fff;
+}
+main .one_care .oc_txt .oc_src #oc_src {
+    width:406px; height:50px;
+    border-radius:7px;
+    margin-top:30px;
+    padding:0 30px;
+}
 main .one_care img {}
-main .search {}
-main .search .showroom {}
-main .search .old_car {}
-main .search .test_drive {}
-footer {}
-footer span {}
-footer img {}
+main .search {
+    width:1680px;
+    margin:100px auto;
+
+}
+main .search .test_drive {
+    float:right;
+    width:820px; height:493px;
+    margin-top:49px;
+}
+main .search .showroom {
+    width:840px; height:273px;
+}
+main .search .old_car {
+    width:840px; height:273px;
+}
+footer {
+    width:100%;
+    padding:120px 100px;
+    background-color:#000;
+}
+footer span {
+    color:#fff;
+    line-height:140%;
+}
+footer .land_logo {
+    width:100%;
+    text-align:center;
+    margin-top:50px;
+}
+footer .land_logo img {}

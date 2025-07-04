@@ -1,54 +1,99 @@
+/* 헤더 시작 */
 header {
-    padding:0 120px;
-    height:70px;
-    position:relative;
+    width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 header h1 {
-    width:204px;
+    width: 204px;
 }
 header h1 a {}
 header h1 a img {}
 header nav {
-    position:absolute;
-    top:26.5px; right:120px;
-    float:right;
+    display: flex;
+    gap: 30px;
 }
-header nav a {
-    font-size:0.875rem;
-    margin-left:30px;
+header nav > * {
+    height: 39px;
+    line-height: 39px;
+    transition: border-bottom 0.3s ease;
+    border-bottom: none;
 }
+header nav > *:hover {
+    border-bottom: 1px solid #000;
+}
+
+header nav .all_model {
+}
+header nav .all_model a {}
+header nav .make_car {}
+header nav .make_car a {}
+header nav .owners {}
+header nav .owners a {}
+header nav .about_us {}
+header nav .about_us a {}
+header nav .nav_electric {}
+header nav .nav_electric a {}
+header nav .retailer {}
+header nav .retailer a {}
+/* 헤더 끝 */
+
+/* 메인이미지 시작 */
 main {}
 main .main_wrap {
     width:1920px;
     height:900px;
     background:url(/images/main_image.png)
 }
+/* 메인이미지 끝 */
+
+/* 브랜드 시작 */
 main .brands {
     display:flex;
-    position:absolute; bottom:-55px; left:700px;
+    gap:10px;
+    justify-content:center;
+    transform:translateY(-19.5px);
+    position:sticky; top:50px;
+    z-index:99;
 }
-main .brands > * img {background-color:#fff;}
-main .brands > * img:hover {
-    background-color:#000;
-    filter:invert(1);
+main .brands > * img {
+    border:1px solid #000;
+    background-color:#fff;
+    transition:background-color 0.3s ease;
 }
 main .brands #range_rover {}
+main .brands #range_rover img:hover {
+    background-color:#000;
+}
 main .brands #range_rover a {}
 main .brands #range_rover a img {}
 main .brands #defender {
     width:180px;
+    transition:filter 0.3s ease;
+}
+main .brands #defender:hover {
+    filter:invert(1);
 }
 main .brands #defender a {}
 main .brands #defender a img {}
 main .brands #discovery {
     height:39px;
-    border:1px solid rgba(0,0,0,0.4);
+}
+main .brands #discovery:hover {
+    transition:filter 0.3s ease;
+    background:#000;
+    filter:invert(1);
 }
 main .brands #discovery a {}
 main .brands #discovery a img {}
+/* 브랜드 끝 */
+
+/* 일렉트릭 시작 */
 main .electric {
     padding-top:100px;
-    width:1609.53px; height:1042px;
+    width:1630.53px; height:1042px;
     margin:0 auto;
     text-align:center;
 }
@@ -58,68 +103,58 @@ main .electric > h1 {
     margin-bottom:20px;
 }
 main .electric > h2 {
-    padding-bottom:50px;
+    margin-bottom:50px;
 }
-main .electric .electric_wrap {}
-main .electric .electric_wrap .shorts_ad {
-    float:left;
-    margin-right:15px;
+main .electric .electric_wrap {
+    display:flex; flex-flow:row nowrap;
+    gap:30px;
 }
+main .electric .electric_wrap .shorts_ad {}
 main .electric .electric_wrap .shorts_ad video {
-    width:453.33px; height:810px;
+    height:810px;
 }
-main .electric .electric_wrap .home_charge {
-    float:left;
-    margin-bottom:15px;
+main .electric .electric_wrap .intro_wrap {
+    display:flex; flex-flow:row wrap;
 }
-main .electric .electric_wrap .home_charge > * {
-    margin-bottom:15px;
+main .electric .electric_wrap .intro_wrap .home_charge {
+    margin-right:30px;
 }
-main .electric .electric_wrap .home_charge h1 {}
-main .electric .electric_wrap .home_charge h1 img {}
-main .electric .electric_wrap .home_charge h2 {
+main .electric .electric_wrap .intro_wrap > * h2 {
+    margin:15px 0;
     font-weight:600;
 }
-main .electric .electric_wrap .home_charge span {}
-main .electric .electric_wrap .weather_charge {
-    float:left;
-    margin-left:15px;
-    margin-bottom:15px;
+main .electric .electric_wrap .intro_wrap > * span {
+    font-size:0.875rem;
+    line-height:140%;
 }
-main .electric .electric_wrap .weather_charge > * {
-    margin-bottom:15px;
+main .electric .electric_wrap .intro_wrap .home_charge h1 {
 }
-main .electric .electric_wrap .weather_charge h1 {}
-main .electric .electric_wrap .weather_charge h1 img {}
-main .electric .electric_wrap .weather_charge h2 {
-    font-weight:600;
+main .electric .electric_wrap .intro_wrap .home_charge h1 img {}
+main .electric .electric_wrap .intro_wrap .home_charge h2 {}
+main .electric .electric_wrap .intro_wrap .home_charge span {}
+main .electric .electric_wrap .intro_wrap .weather_charge {}
+main .electric .electric_wrap .intro_wrap .weather_charge > * {}
+main .electric .electric_wrap .intro_wrap .weather_charge h1 {}
+main .electric .electric_wrap .intro_wrap .weather_charge h1 img {}
+main .electric .electric_wrap .intro_wrap .weather_charge h2 {}
+main .electric .electric_wrap .intro_wrap .weather_charge span {}
+main .electric .electric_wrap .intro_wrap .out_charge {
+    margin-right:30px;
 }
-main .electric .electric_wrap .weather_charge span {}
-main .electric .electric_wrap .out_charge {
-    float:left;
-}
-main .electric .electric_wrap .out_charge > * {
-    margin-bottom:15px;
-}
-main .electric .electric_wrap .out_charge h1 {}
-main .electric .electric_wrap .out_charge h1 img {}
-main .electric .electric_wrap .out_charge h2 {
-    font-weight:600;
-}
-main .electric .electric_wrap .out_charge span {}
-main .electric .electric_wrap .charge_chk {
-    float:left;
-    margin-left:15px;
-}
-main .electric .electric_wrap .charge_chk > * {
-    margin-bottom:15px;
-}
-main .electric .electric_wrap .charge_chk h1 {}
-main .electric .electric_wrap .charge_chk h1 img {}
-main .electric .electric_wrap .charge_chk h2 {
-    font-weight:600;
-}
-main .electric .electric_wrap .charge_chk span {}
+main .electric .electric_wrap .intro_wrap .out_charge > * {}
+main .electric .electric_wrap .intro_wrap .out_charge h1 {}
+main .electric .electric_wrap .intro_wrap .out_charge h1 img {}
+main .electric .electric_wrap .intro_wrap .out_charge h2 {}
+main .electric .electric_wrap .intro_wrap .out_charge span {}
+main .electric .electric_wrap .intro_wrap.charge_chk {}
+main .electric .electric_wrap .intro_wrap .charge_chk > * {}
+main .electric .electric_wrap .intro_wrap .charge_chk h1 {}
+main .electric .electric_wrap .intro_wrap .charge_chk h1 img {}
+main .electric .electric_wrap .intro_wrap .charge_chk h2 {}
+main .electric .electric_wrap .intro_wrap .charge_chk span {}
+/* 일렉트릭 끝 */
+
+/* 전체모델 시작 */
 main .model_all {
     width:1680px; height:1161px;
     margin:100px auto;
@@ -154,8 +189,15 @@ main .model_all .model_wrap .model:nth-child(3n) {
 main .model_all .model_wrap .model .car_intro {
     line-height:180%;
 }
-main .model_all .model_wrap .model .car_intro img {
+main .model_all .model_wrap .model .car_intro .wrap {
+    overflow:hidden;
+}
+main .model_all .model_wrap .model .car_intro .wrap img {
     width:540px; height:304px;
+    transition: transform 0.3s ease;
+}
+main .model_all .model_wrap .model:hover img{
+    transform:scale(1.1);
 }
 main .model_all .model_wrap .model .car_intro .cp {
     font-size:0.75rem;
@@ -185,6 +227,9 @@ main .model_all .model_wrap .model3 {}
 main .model_all .model_wrap .model4 {}
 main .model_all .model_wrap .model5 {}
 main .model_all .model_wrap .model6 {}
+/* 전체모델 끝 */
+
+/* 원케어 시작 */
 main .one_care {
     width:100%; height:600px;
     background-color:#333;
@@ -221,6 +266,9 @@ main .one_care .oc_txt .oc_src #oc_src {
     padding:0 30px;
 }
 main .one_care img {}
+/* 원케어 끝 */
+
+/* 찾기 시작 */
 main .search {
     width:1680px;
     margin:100px auto;
@@ -237,18 +285,26 @@ main .search .showroom {
 main .search .old_car {
     width:840px; height:273px;
 }
+/* 찾기 끝 */
+
+/* 푸터 시작 */
 footer {
     width:100%;
     padding:120px 100px;
     background-color:#000;
+    display:flex; flex-flow:row wrap; gap:20px;
 }
 footer span {
     color:#fff;
+    font-size:0.75rem;
     line-height:140%;
 }
 footer .land_logo {
     width:100%;
-    text-align:center;
     margin-top:50px;
+    text-align:center;
 }
 footer .land_logo img {}
+/* 푸터 끝 */
+
+/* 애니메이션 */

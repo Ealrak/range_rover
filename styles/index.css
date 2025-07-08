@@ -131,8 +131,8 @@ main .electric .electric_wrap .intro_wrap > * span {
     font-size:0.875rem;
     line-height:140%;
 }
-main .electric .electric_wrap .intro_wrap .home_charge h1 {
-}
+main .electric .electric_wrap .intro_wrap .home_charge {}
+main .electric .electric_wrap .intro_wrap .home_charge h1 {}
 main .electric .electric_wrap .intro_wrap .home_charge h1 img {}
 main .electric .electric_wrap .intro_wrap .home_charge h2 {}
 main .electric .electric_wrap .intro_wrap .home_charge span {}
@@ -222,6 +222,7 @@ main .model_all .model_wrap .model .btm_btn {
     position:relative;
 }
 main .model_all .model_wrap .model .btm_btn .make {
+    position:absolute;
 }
 main .model_all .model_wrap .model .btm_btn .detail {
     position:absolute; top:8px; right:0;
@@ -243,6 +244,7 @@ main .one_care {
     background-color:#333;
     display:flex;
     flex-flow:row nowrap;
+    position:relative;
 }
 main .one_care .oc_txt {
     margin:158.5px 0;
@@ -271,10 +273,15 @@ main .one_care .oc_txt .oc_src #oc_src {
     width:406px; height:50px;
     border-radius:7px;
     margin-top:30px;
-    padding:0 60px;
+    padding-left:60px;
     background:url(/images/search.png) no-repeat 5% center #fff;
 }
-main .one_care img {}
+main .one_care .oc_img {
+    background-image:url(/images/one_care.png);
+    width:960px; height:600px;;
+    background-repeat:no-repeat;
+    position:absolute; right:0;
+}
 /* 원케어 끝 */
 
 /* 찾기 시작 */
@@ -339,17 +346,35 @@ footer .land_logo img {}
 
 /* 반응형 */
 @media screen and (max-width:960px) {
+    main {
+        max-width:960px;
+    }
     header {
         padding:0 20px;
     }
-    header h1 {width:204px;}
+    header h1 img {width:140px;}
+    header nav > * a {
+        font-size:0.625rem;
+    }
     main .main_wrap {
-        width:100%; height:480px;
+        max-width:960px; max-height:480px;
         background-size:cover;
         background-position:center;
     }
+    main .brands {
+        position:relative; transform:translateY(-115.5px);
+        z-index:1;
+    }
     main .electric {
-        width:100%; padding:0 20px;
+        width:870px; padding:0 20px;
+        margin:50px auto;
+        height:800px;
+    }
+    main .electric > h1 {
+        font-size:1.5rem;
+    }
+    main .electric > h2 {
+        font-size:0.75rem;
     }
     main .electric .electric_wrap {
         gap:0;
@@ -357,8 +382,14 @@ footer .land_logo img {}
     main .electric .electric_wrap .shorts_ad video {
         display:none;
     }
+    main .electric .electric_wrap .intro_wrap > * h2 {
+        font-size:0.875rem;
+    }
+    main .electric .electric_wrap .intro_wrap > * span {
+        font-size:0.625rem;
+    }
     main .electric .electric_wrap .intro_wrap .home_charge {
-        width:400px; height:309px; margin-right:0;
+        width:400px; height:309px; margin-bottom:30px;
     }
     main .electric .electric_wrap .intro_wrap .home_charge h1 img{
         width:100%;
@@ -380,5 +411,111 @@ footer .land_logo img {}
     }
     main .electric .electric_wrap .intro_wrap .charge_chk h1 img{
         width:100%;
+    }
+    main .model_all {
+        width:100%; height:100%;
+        margin:30px;
+    }
+    main .model_all h1 {
+        font-size:1.375rem;
+        width:100px;
+    }
+    main .model_all .category a {
+        font-size:0.875rem;
+    }
+    main .model_all .model_wrap {
+        width:885px;
+    }
+    main .model_all .model_wrap .model {
+        width:288px; height:300px;
+        margin-right:10px;
+    }
+    main .model_all .model_wrap .model .car_intro .wrap img {
+        width:288px; height:155px;
+    }
+    main .model_all .model_wrap .model .car_intro .cp {
+        font-size:0.625rem;
+    }
+    main .model_all .model_wrap .model .car_intro .product {
+        font-weight:600;
+        font-size:0.875rem;
+    }
+    main .model_all .model_wrap .model .car_intro > em {
+        font-size:0.625rem;
+    }
+    main .model_all .model_wrap .model .btm_btn {
+        width:288px; height:40px;
+        display:flex; flex-flow:column wrap;
+    }
+    main .model_all .model_wrap .model .btm_btn .make {
+        font-size:0.625rem;
+        top:5px;
+    }
+    main .model_all .model_wrap .model .btm_btn .detail {
+        font-size:0.625rem;
+        left:0; top:25px;
+    }
+    main .model_all .model_wrap .model .btm_btn .detail img {
+        left:50px; 
+        width:12px; height:12px;
+        
+    }
+    main .one_care {
+        background-color:#333;
+        display:flex;
+        flex-flow:column-reverse nowrap;
+        height:600px;
+    }
+    main .one_care .oc_img {
+        height:200px;
+        background-position-y:40%;
+        top:0;
+    }
+    main .one_care .oc_txt {
+        margin-bottom:58.5px;
+        text-align:center;
+        width:960px; height:283px;
+    }
+    main .one_care .oc_txt h1 {
+        font-size:1.5rem;
+        margin-bottom:30px;
+    }
+    main .one_care .oc_txt span {
+        font-size:0.75rem;
+    }
+    main .one_care .oc_txt .oc_src em {
+        font-size:0.875rem;
+    }
+    main .one_care .oc_txt .oc_src #oc_src {
+        width:316px; height:38px;
+        padding-left:40px;
+        background-size:18px;
+        font-size:0.75rem;
+    }
+    main .search {
+        max-width:900px;
+        margin-left:50px;
+    }
+    main .search .search_left .showroom {
+        width:410px; height:133.25px;
+    }
+    main .search .search_left .showroom img {
+        width:calc((840px / 2) - 10px);
+    }
+    main .search .search_left .old_car {
+        width:410px; height:133.25px;
+    }
+    main .search .search_left .old_car img {
+        width:calc((840px / 2) - 10px);
+    }
+    main .search .test_drive {
+        width:410px; height:260PX;
+        margin-top:26px;
+    }
+    main .search .test_drive img {
+        width:410px; height: 240px;
+    }
+    footer span {
+        font-size:0.625rem;
     }
 }

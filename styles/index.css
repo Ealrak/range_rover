@@ -1,6 +1,6 @@
 /* 헤더 시작 */
 header {
-    width: 100%;
+    width:100vw; height:100%;
     padding:0 120px;
     display: flex;
     align-items: center;
@@ -16,12 +16,11 @@ header h1 a {}
 header h1 a img {}
 header nav {
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 header nav > * {
     height: 39px;
     line-height: 39px;
-    transition: border-bottom 0.3s ease;
     border-bottom: none;
 }
 header nav > *:hover {
@@ -45,10 +44,11 @@ header nav .retailer a {}
 
 /* 메인이미지 시작 */
 main {}
-main .main_wrap {
-    width:1920px;
-    height:900px;
-    background:url(/images/main_image.png)
+main .main_wrap img {
+    width:100vw;
+    height:100%;
+    max-width:1920px;
+    min-width:360px;
 }
 /* 메인이미지 끝 */
 
@@ -97,7 +97,8 @@ main .brands #discovery a img {}
 /* 일렉트릭 시작 */
 main .electric {
     padding-top:100px;
-    width:1630.53px; height:1042px;
+    max-width:1630.53px; height:100%;
+    width:100vw;
     margin:0 auto;
     text-align:center;
 }
@@ -517,5 +518,10 @@ footer .land_logo img {}
     }
     footer span {
         font-size:0.625rem;
+    }
+}
+@media screen and (max-width:759px) {
+    main .main_wrap {
+        width:100%;
     }
 }
